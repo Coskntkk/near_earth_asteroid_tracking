@@ -16,7 +16,7 @@ export default function HomePage() {
       const data = await fetchAsteroids(start, end);
       setAsteroids(data);
     } catch (e) {
-      alert('Could not fetch.');
+      console.log(e);
     } finally {
       setLoading(false);
     }
