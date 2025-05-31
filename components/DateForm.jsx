@@ -27,7 +27,7 @@ export default function DateForm({ onSubmit }) {
                 className="border border-gray-300 rounded px-3 py-2 w-full sm:w-auto"
             />
             <button
-                onClick={onSubmit}
+                onClick={() => onSubmit(start, end)}
                 className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50 w-full sm:w-auto"
             >
                 Search
